@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoitemlayout"
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_210sdp"
+    app:cardElevation="@dimen/_3sdp"
+    android:layout_margin="@dimen/_3sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/shimmerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineSpotShadowColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmer_demo_angle="25"
+            app:shimmer_demo_layout="@layout/item_shimmer_hdwallpaper"
+            app:shimmer_demo_shimmer_color="#CBCDCF"
+            tools:ignore="MissingConstraints">
+
+        </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

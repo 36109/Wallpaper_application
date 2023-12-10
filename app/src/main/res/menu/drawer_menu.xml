@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+      <item
+          android:id="@+id/hdwallpapers"
+          android:icon="@drawable/images"
+          android:title="Hd wallpaper"
+          />
+      <item
+          android:id="@+id/downloads"
+          android:icon="@drawable/download"
+          android:title="Downloads"
+          />
+      <item
+          android:id="@+id/galleryvideos"
+          android:icon="@drawable/gallery"
+          android:title="Gallery videos"
+          />
+      <item
+          android:id="@+id/videowallpapers"
+          android:icon="@drawable/video"
+          android:title="Video wallpapers"
+          />
+
+
+
+</menu>

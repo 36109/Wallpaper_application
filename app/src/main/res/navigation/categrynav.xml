@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categrynav"
+    app:startDestination="@id/categories">
+
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.wallpaper_appliction.Fragments.Categories"
+        android:label="Categories" >
+        <action
+            android:id="@+id/action_categories_to_search"
+            app:destination="@id/search" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.wallpaper_appliction.Fragments.Search"
+        android:label="Search" />
+</navigation>
